@@ -12,67 +12,68 @@
 </head>
 
 <body>
-    <div class="jumbotron">
+    <div class="jumbotron container-fluid mt-3 text-center p-3 bg-dark text-white">
         <h1>Weather Dashboard</h1>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3 class=>Search</h3>
-                <div class="input"></div>
-                <input type="text" class="" id="">
-                <div class=>
-                    <button class=""></button>
+        <div class="row rounded">
+            <div class="col-sm-4 bg-dark">
+                <h3 class="pt-2">Search</h3>
+                <div class="input-group mb-sm-3"></div>
+                <input type="text" class="form-control" id="search-city">
+                <div class="input-group-append">
+                    <button class="btn bg-dark text-white" id="search-btn"><span class="fas fa-search"></span></button>
                 </div>
             </div>
         </div>
-        <button class=></button>
-        <ul class="">
+        <button class="btn btn-dark text-white" type="button" id="clear-btn">Reset Saved</button>
+        <ul class="list-group">
 
         </ul>
     </div>
-    <div class="col">
-        <div class="row">
-            <div class="col">
-                <h3 class=></h3>
-                <p>Temperature</p>
-                <p>Wind Speed</p>
-                <p>Humidity</p>
-                <p>UV Index</p>
+    <div class="col-sm-8">
+        <div class="row ml-2 text-white bg-dark rounded">
+            <div class="col-sm-12" id="current-weather">
+                <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                <p>Temperature:<span class="current" id="temperature"></span></p>
+                <p>Humidity:<span class="current" id="humidity"></span></p>
+                <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                <p>UV index:<span class="current rounded py-2 px-2 text-white" id="uv-index"></span>
+                </p>
             </div>
-    </div>
-    <div class="col">
+        </div>
+    <div class="col-sm-12 ">
         <h3>Forecast</h3>
         <div class="row">
-            <div class="col" >
+            <div class="col-sm-2 bg-dark forecast text-white m-lg-2 mb-sm-2 p-2 mt-sm-1 rounded">
                 <p id="futureDate0"></p>
                 <p id="futureImg0"></p>
                 <p>Temperature:<span id="futureTemp0"></span></p>
                 <p>Wind Speed:<span id="futureWind0"></span></p>
                 <p>Humidity:<span id="futureHumidity0"></span></p>
             </div>
-            <div class="col" >
+            <div class="col-sm-2 bg-dark forecast text-white m-lg-2 mb-sm-2 p-2 mt-sm-1 rounded">
                 <p id="futureDate1"></p>
                 <p id="futureImg1"></p>
                 <p>Temperature:<span id="futureTemp1"></span></p>
                 <p>Wind Speed:<span id="futureWind1"></span></p>
                 <p>Humidity:<span id="futureHumidity1"></span></p>
             </div>
-            <div class="col">
+            <div class="col-sm-2 bg-dark forecast text-white m-lg-2 mb-sm-2 p-2 mt-sm-1 rounded">
                 <p id="futureDate2"></p>
                 <p id="futureImg2"></p>
                 <p>Temperature:<span id="futureTemp2"></span></p>
                 <p>Wind Speed:<span id="futureWind2"></span></p>
                 <p>Humidity:<span id="futureHumidity2"></span></p>
             </div>
-            <div class="col">
+            <div class="col-sm-2 bg-dark forecast text-white m-lg-2 mb-sm-2 p-2 mt-sm-1 rounded">
                 <p id="futureDate3"></p>
                 <p id="futureImg3"></p>
                 <p>Temperature:<span id="futureTemp3"></span></p>
                 <p>Wind Speed:<span id="futureWind3"></span></p>
                 <p>Humidity:<span id="futureHumidity3"></span></p>
             </div>
-            <div class="col" >
+            <div class="col-sm-2 bg-dark forecast text-white m-lg-2 mb-sm-2 p-2 mt-sm-1 rounded">
                 <p id="futureDate4"></p>
                 <p id="futureImg4"></p>
                 <p>Temperature:<span id="futureTemp4"></span></p>
